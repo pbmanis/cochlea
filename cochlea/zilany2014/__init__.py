@@ -115,7 +115,7 @@ def run_zilany2014(
     trains = itertools.chain(*nested)
     spike_trains = pd.DataFrame(list(trains))
 
-    np.fft.fftpack._fft_cache = {}
+    #np.fft.fftpack._fft_cache = {}
 
     return spike_trains
 
