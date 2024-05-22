@@ -1,0 +1,45 @@
+[build-system]
+requires = [
+    "setuptools >= 70.0",
+    "wheel",
+    "cython",
+    "numpy",
+    ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cochlea"
+version = "1.2.2"
+requires-python = ">=3.11"
+description = "Inner ear models in Python"
+authors = [
+  { name = "Marek Rudnicki", email = "marek.rudnicki@tum.de" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+    "numpy",
+    "scipy",
+    "pandas"
+    ]
+
+[toolsetuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where=["cochlea"]
+# include=["cochlea.*"]
+exclude=["tests"]
+# namspaces = false
+
+[project.scripts]
+cli-name = "cochlea.run_zilany2014:main"
+
+[project.urls]
+"Homepage" = "https://github.com/mrkrd/cochlea"
+"Bug Tracker" = "https://github.com/mrkrd/cochlea/tarball/master"

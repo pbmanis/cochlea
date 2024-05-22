@@ -7,7 +7,7 @@ Requirements
 ------------
 
 Those are Python packages necessary to run *cochlea*.  Currently only
-Python 2.7 (64-bit) is supported.
+Python 3.9 (64-bit) is supported.
 
 - Numpy
 - Scipy
