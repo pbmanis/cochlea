@@ -1,3 +1,4 @@
+cochlea_venv/*
 *.pyc
 build
 dist
